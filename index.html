@@ -67,54 +67,55 @@
             <div class="container">
                 <h2 class="section-title reveal">Featured Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card reveal">
+                    <div class="project-card reveal" data-title="InsightScanX — NexConstruct"
+                        data-description="Developed AI solutions for 3D reconstruction and automated defect detection, equipment counting, and project summary reporting, enabling construction teams to streamline site inspections and improve oversight across both App and Web platforms. Built an automated pipeline for data labeling, custom model training, and deployment for 3D scanning applications. Optimized AI models and integrated them with CoreML for real-time inference on mobile devices. Implemented a chatbot using Retrieval-Augmented Generation (RAG) to provide construction guidelines, regulations, and detailed instructions for on-site operations."
+                        data-tech="AWS Bedrock, LangGraph, CoreML, Open3D, FastAPI" data-img="assets/insightscanx.jpg"
+                        data-link="https://lp.insightscanx.com/vn/">
                         <div class="project-img">
                             <img src="assets/insightscanx.jpg" alt="insightScanX">
                         </div>
                         <div class="project-info">
                             <h3>InsightScanX — NexConstruct</h3>
-                            <p>Developed AI solutions for 3D reconstruction, automated defect detection, and equipment
-                                counting. Optimized models for CoreML and implemented a RAG-based chatbot for
-                                construction guidelines.</p>
+                            <p>AI solutions for 3D reconstruction, defect detection, and RAG-based construction
+                                guidelines.</p>
                             <div class="project-tags">
                                 <span>CoreML</span>
                                 <span>AWS Bedrock</span>
                                 <span>LangGraph</span>
-                                <span>Open3D</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://lp.insightscanx.com/vn/" target="_blank"><i
-                                        class="fas fa-external-link-alt"></i> Website</a>
+                                <span>FastAPI</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card reveal">
+                    <div class="project-card reveal" data-title="AI Sales Agent System — Freelancer"
+                        data-description="Built an AI sales assistant platform that transforms raw product information into persuasive, tailored responses to help businesses engage customers and increase conversions. Developed a system to ingest and process product data from websites, documents, and YouTube videos. Designed data extraction and processing pipelines to consolidate structured and unstructured product information. Built an AI sales agent capable of generating persuasive, context-aware responses."
+                        data-tech="OpenAPI, Ollama, LangGraph, Web Scraping" data-img="assets/ai_sales_agent.jpg">
                         <div class="project-img">
                             <img src="assets/ai_sales_agent.jpg" alt="AI Sales Agent System">
                         </div>
                         <div class="project-info">
                             <h3>AI Sales Agent System</h3>
-                            <p>Built an AI sales assistant platform that transforms raw product data from websites and
-                                videos into persuasive, tailored responses to increase conversions.</p>
+                            <p>Built an AI sales assistant platform that transforms raw product data into persuasive
+                                responses.</p>
                             <div class="project-tags">
                                 <span>Ollama</span>
                                 <span>LangGraph</span>
                                 <span>Web Scraping</span>
+                                <span>OpenAPI</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card reveal">
+                    <div class="project-card reveal" data-title="Real-time RAG Data Synchronization Platform"
+                        data-description="Designed a Retrieval-Augmented Generation (RAG) platform with PostgreSQL as the single source of truth, eliminating manual re-indexing and cron jobs. Implemented Change Data Capture (CDC) from PostgreSQL to Kafka, emitting real-time events for all document-related INSERT, UPDATE, and DELETE operations. Developed a RAG server that consumes Kafka events to automatically convert documents to Markdown, perform chunking and embedding, and remove vectors when documents are deleted or unpublished. Stored embeddings in Qdrant and managed raw documents in AWS S3."
+                        data-tech="PostgreSQL, Kafka, Qdrant, AWS S3" data-img="assets/myrag.jpg">
                         <div class="project-img">
-                            <div class="placeholder-img"
-                                style="background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
-                                RAG Sync</div>
+                            <img src="assets/myrag.jpg" alt="Real-time RAG Data Sync">
                         </div>
                         <div class="project-info">
                             <h3>Real-time RAG Data Sync</h3>
                             <p>Designed a RAG platform using CDC from PostgreSQL to Kafka for real-time vector
-                                synchronization in Qdrant, eliminating manual re-indexing.</p>
+                                synchronization.</p>
                             <div class="project-tags">
                                 <span>Kafka</span>
                                 <span>PostgreSQL</span>
@@ -124,49 +125,54 @@
                         </div>
                     </div>
 
-                    <div class="project-card reveal">
+                    <div class="project-card reveal" data-title="AI Face Recognition System — FPT Corporation"
+                        data-description="Applied face recognition to enhance service automation by identifying VIP and returning customers, improving personalization and customer engagement. Developed a multi-model AI pipeline for face recognition, age, gender, emotion prediction, and image quality assessment. Deployed models using Triton Inference Server and optimized inference with TensorRT for real-time performance. Supported deployment on Jetson devices and server GPUs with multi-threaded processing."
+                        data-tech="Ffmpeg, TensorRT, Triton Server, OpenCV, Redis, Qdrant"
+                        data-img="assets/face_recognition.jpg">
                         <div class="project-img">
                             <img src="assets/face_recognition.jpg" alt="AI Face Recognition System">
                         </div>
                         <div class="project-info">
                             <h3>AI Face Recognition System</h3>
-                            <p>Multi-model pipeline for face recognition, age, gender, and emotion prediction. Optimized
-                                with TensorRT and Triton Server for real-time performance on Jetson/GPUs.</p>
+                            <p>Multi-model pipeline for face recognition and analytics. Optimized with TensorRT and
+                                Triton.</p>
                             <div class="project-tags">
                                 <span>Triton</span>
                                 <span>TensorRT</span>
-                                <span>Redis</span>
+                                <span>OpenCV</span>
                                 <span>Qdrant</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card reveal">
+                    <div class="project-card reveal" data-title="Aquaculture Monitoring System — Velox Tech"
+                        data-description="Built AI solutions for aquaculture that analyze fish behavior and farm conditions to help operators improve efficiency, reduce risks, and optimize production. Developed AI systems for monitoring aquaculture environments using underwater cameras. Optimized models for classification, detection, segmentation, and tracking on edge devices. Built data acquisition and visualization pipelines using MQTT."
+                        data-tech="YOLO, OpenCV, TensorRT, TFLite, NCNN, Gstreamer, MQTT"
+                        data-img="assets/aquaculture.jpg">
                         <div class="project-img">
                             <img src="assets/aquaculture.jpg" alt="Aquaculture Monitoring System">
                         </div>
                         <div class="project-info">
                             <h3>Aquaculture Monitoring System</h3>
-                            <p>AI solutions for analyzing fish behavior via underwater cameras. Optimized models
-                                (TensorRT, TFLite, NCNN) for edge device efficiency and real-time MQTT data streaming.
-                            </p>
+                            <p>AI solutions for analyzing fish behavior via underwater cameras on edge devices.</p>
                             <div class="project-tags">
                                 <span>Edge AI</span>
-                                <span>TensorRT</span>
                                 <span>YOLO</span>
+                                <span>TensorRT</span>
                                 <span>MQTT</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card reveal">
+                    <div class="project-card reveal" data-title="Warehouse Robot Automation System - Velox Tech"
+                        data-description="Developed an automation tool for warehouse robots that detects operational faults in real time. Designed and implemented a ROS-based microservice system to acquire 2D point cloud data from LiDAR sensors, perform coordinate transformations, predict errors, and send results to the robot controller in real time. Built an automated testing, build, and deployment pipeline using GitLab CI/CD."
+                        data-tech="ROS, LiDAR, DBSCAN, GitLab CI" data-img="assets/velox_robot.jpeg">
                         <div class="project-img">
                             <img src="assets/velox_robot.jpeg" alt="Warehouse Robot Automation">
                         </div>
                         <div class="project-info">
                             <h3>Warehouse Robot Automation</h3>
-                            <p>ROS-based microservice system for warehouse robots. Uses LiDAR data and DBSCAN for
-                                real-time fault detection and perception-control integration.</p>
+                            <p>ROS-based microservice system for real-time fault detection using LiDAR data.</p>
                             <div class="project-tags">
                                 <span>ROS</span>
                                 <span>LiDAR</span>
@@ -176,59 +182,87 @@
                         </div>
                     </div>
 
-                    <div class="project-card reveal">
+                    <div class="project-card reveal" data-title="News Headline Generator — Freelancer"
+                        data-description="Created a system that automatically generates creative, attention-grabbing news headlines. Built an ETL pipeline to collect and process trending news articles. Implemented a Retrieval-Augmented Generation (RAG) system for content understanding. Fine-tuned large language models (Mistral) to generate creative headlines, monitored via MLflow and vLLM."
+                        data-tech="Mistral, MLflow, Unslode, vLLM, firecrawl" data-img="assets/news_generator.jpg">
                         <div class="project-img">
                             <img src="assets/news_generator.jpg" alt="News Headline Generator">
                         </div>
                         <div class="project-info">
                             <h3>News Headline Generator</h3>
-                            <p>ETL pipeline for trending news. Fine-tuned LLMs (Mistral) for creative headlines with
-                                RAG, monitoring performance via MLflow and vLLM.</p>
+                            <p>Automatically generates creative news headlines using fine-tuned LLMs and RAG.</p>
                             <div class="project-tags">
                                 <span>Mistral</span>
                                 <span>MLflow</span>
                                 <span>vLLM</span>
-                                <span>RAG</span>
+                                <span>Firecrawl</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card reveal">
+                    <div class="project-card reveal" data-title="PaddleOCR — Vietnamese"
+                        data-description="Developed and adapted an OCR system based on PaddleOCR to accurately detect and recognize Vietnamese text. Implemented a two-stage OCR pipeline with text detection (DBNet, PSENet) and recognition. Handled irregular text (curved, rotated) and extended the pipeline toward intelligent document analysis including layout understanding and table recognition."
+                        data-tech="PaddleOCR, OpenCV, CTC, DBNet, PSENet" data-img="assets/ocr.jpg">
                         <div class="project-img">
-                            <div class="placeholder-img"
-                                style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
-                                PaddleOCR</div>
+                            <img src="assets/ocr.jpg" alt="PaddleOCR - Vietnamese">
                         </div>
                         <div class="project-info">
-                            <h3>PaddleOCR — Vietnamese</h3>
-                            <p>Two-stage OCR pipeline for Vietnamese text detection and recognition. Handles irregular
-                                text and intelligent document analysis for layout understanding.</p>
+                            <h3>PaddleOCR - Vietnamese</h3>
+                            <p>Two-stage OCR pipeline for Vietnamese text detection and recognition in real-world
+                                images.</p>
                             <div class="project-tags">
                                 <span>PaddleOCR</span>
                                 <span>OpenCV</span>
                                 <span>DBNet</span>
-                                <span>PSENet</span>
+                                <span>Document Analysis</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card reveal">
+                    <div class="project-card reveal" data-title="6-Axis Industrial Robot — An Duc Thinh"
+                        data-description="Researched and developed a 6-axis industrial robot to enhance manufacturing automation. Implemented 6-axis robot kinematics models to control robot movements. Calibrated RealSense D435 3D camera and performed projective transformations. Developed solution for robot navigation (pick and place) using deep learning for objects detection."
+                        data-tech="ROS, OpenCV, Depth camera, YOLO" data-img="assets/industrial_robot.jpg"
+                        data-youtube="E7qE8quBkpk">
                         <div class="project-img">
                             <img src="assets/industrial_robot.jpg" alt="6-Axis Industrial Robot">
                         </div>
                         <div class="project-info">
                             <h3>6-Axis Industrial Robot</h3>
-                            <p>Implemented 6-axis kinematics and RealSense calibration. Developed deep learning-based
-                                pick-and-place systems for automated manufacturing.</p>
+                            <p>Developed 6-axis kinematics and deep learning-based pick-and-place systems.</p>
                             <div class="project-tags">
                                 <span>Robotics</span>
                                 <span>ROS</span>
                                 <span>RealSense</span>
                                 <span>YOLO</span>
                             </div>
-                            <div class="project-links">
-                                <a href="https://www.youtube.com/watch?v=E7qE8quBkpk" target="_blank"><i
-                                        class="fab fa-youtube"></i> YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Modal -->
+                <div id="project-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <div class="modal-body">
+                            <div class="modal-media" id="modal-media">
+                                <!-- Image or Video will be injected here -->
+                            </div>
+                            <div class="modal-text">
+                                <h2 id="modal-title">Project Title</h2>
+                                <div class="project-tags" id="modal-tags">
+                                    <!-- Tags will be injected here -->
+                                </div>
+                                <div class="modal-description">
+                                    <h3>Project Description</h3>
+                                    <p id="modal-desc">Description text...</p>
+                                </div>
+                                <div class="modal-tech">
+                                    <h3>Tech Stack</h3>
+                                    <p id="modal-tech-list">Tech stack details...</p>
+                                </div>
+                                <div class="modal-footer" id="modal-footer">
+                                    <!-- Links will be injected here -->
+                                </div>
                             </div>
                         </div>
                     </div>
