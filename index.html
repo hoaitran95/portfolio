@@ -67,67 +67,73 @@
             <div class="container">
                 <h2 class="section-title reveal">Featured Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card reveal" data-title="InsightScanX — NexConstruct"
-                        data-description="Developed AI solutions for 3D reconstruction and automated defect detection, equipment counting, and project summary reporting, enabling construction teams to streamline site inspections and improve oversight across both App and Web platforms. Built an automated pipeline for data labeling, custom model training, and deployment for 3D scanning applications. Optimized AI models and integrated them with CoreML for real-time inference on mobile devices. Implemented a chatbot using Retrieval-Augmented Generation (RAG) to provide construction guidelines, regulations, and detailed instructions for on-site operations."
-                        data-tech="AWS Bedrock, LangGraph, CoreML, Open3D, FastAPI" data-img="assets/insightscanx.jpg"
+                    <div class="project-card reveal" data-title="InsightScanX - NexConstruct" data-role="AI Engineer"
+                        data-description="Developed AI solutions for 3D reconstruction and automated defect detection, equipment counting, and project summary reporting, enabling construction teams to streamline site inspections and improve oversight across both App and Web platforms."
+                        data-responsibilities="Built an automated pipeline for data labeling, custom model training, and deployment for 3D scanning applications.;Optimized AI models and integrated them with CoreML for real-time inference on mobile devices.;Implemented a chatbot using Retrieval-Augmented Generation (RAG) to provide construction guidelines, regulations, and detailed instructions for on-site operations."
+                        data-tech="Bedrock, LangGraph, CoreML, Open3D, FastAPI" data-img="assets/insightscanx.jpg"
                         data-link="https://lp.insightscanx.com/vn/">
                         <div class="project-img">
                             <img src="assets/insightscanx.jpg" alt="insightScanX">
                         </div>
                         <div class="project-info">
-                            <h3>InsightScanX — NexConstruct</h3>
+                            <h3>InsightScanX - NexConstruct</h3>
                             <p>AI solutions for 3D reconstruction, defect detection, and RAG-based construction
                                 guidelines.</p>
                             <div class="project-tags">
                                 <span>CoreML</span>
-                                <span>AWS Bedrock</span>
+                                <span>Bedrock</span>
                                 <span>LangGraph</span>
                                 <span>FastAPI</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card reveal" data-title="AI Sales Agent System — Freelancer"
-                        data-description="Built an AI sales assistant platform that transforms raw product information into persuasive, tailored responses to help businesses engage customers and increase conversions. Developed a system to ingest and process product data from websites, documents, and YouTube videos. Designed data extraction and processing pipelines to consolidate structured and unstructured product information. Built an AI sales agent capable of generating persuasive, context-aware responses."
-                        data-tech="OpenAPI, Ollama, LangGraph, Web Scraping" data-img="assets/ai_sales_agent.jpg">
+                    <div class="project-card reveal" data-title="AI Sales Agent System - Freelancer"
+                        data-role="AI Engineer"
+                        data-description="Built an AI sales assistant platform that transforms raw product information into persuasive, tailored responses to help businesses engage customers and increase conversions."
+                        data-responsibilities="Developed a system to ingest and process product data from websites, documents, and YouTube videos.;Designed data extraction and processing pipelines to consolidate structured and unstructured product information.;Built an AI sales agent capable of generating persuasive, context-aware responses."
+                        data-tech="OpenAPI, Ollama, LangGraph, Firecrawl" data-img="assets/ai_sales_agent.jpg">
                         <div class="project-img">
                             <img src="assets/ai_sales_agent.jpg" alt="AI Sales Agent System">
                         </div>
                         <div class="project-info">
                             <h3>AI Sales Agent System</h3>
-                            <p>Built an AI sales assistant platform that transforms raw product data into persuasive
-                                responses.</p>
+                            <p>An AI assistant that transforms raw product data into persuasive sales responses.</p>
                             <div class="project-tags">
                                 <span>Ollama</span>
                                 <span>LangGraph</span>
-                                <span>Web Scraping</span>
+                                <span>Firecrawl</span>
                                 <span>OpenAPI</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card reveal" data-title="Real-time RAG Data Synchronization Platform"
-                        data-description="Designed a Retrieval-Augmented Generation (RAG) platform with PostgreSQL as the single source of truth, eliminating manual re-indexing and cron jobs. Implemented Change Data Capture (CDC) from PostgreSQL to Kafka, emitting real-time events for all document-related INSERT, UPDATE, and DELETE operations. Developed a RAG server that consumes Kafka events to automatically convert documents to Markdown, perform chunking and embedding, and remove vectors when documents are deleted or unpublished. Stored embeddings in Qdrant and managed raw documents in AWS S3."
-                        data-tech="PostgreSQL, Kafka, Qdrant, AWS S3" data-img="assets/myrag.jpg">
+                        data-role="AI"
+                        data-description="Designed a Retrieval-Augmented Generation (RAG) platform with PostgreSQL as the single source of truth, eliminating manual re-indexing and cron jobs."
+                        data-responsibilities="Implemented Change Data Capture (CDC) from PostgreSQL to Kafka, emitting real-time events for all document-related INSERT, UPDATE, and DELETE operations.;Developed a RAG server that consumes Kafka events to automatically convert documents to Markdown, perform chunking and embedding, and remove vectors when documents are deleted or unpublished.;Stored embeddings in Qdrant and managed raw documents in AWS S3, keeping the web application decoupled from the vector DB."
+                        data-tech="PostgreSQL, Kafka, Qdrant, Docling" data-img="assets/myrag.jpg"
+                        data-github="https://github.com/hoaitran95/myRAG" data-diagram="assets/rag-system.jpg">
                         <div class="project-img">
                             <img src="assets/myrag.jpg" alt="Real-time RAG Data Sync">
                         </div>
                         <div class="project-info">
                             <h3>Real-time RAG Data Sync</h3>
-                            <p>Designed a RAG platform using CDC from PostgreSQL to Kafka for real-time vector
-                                synchronization.</p>
+                            <p>Real-time vector synchronization platform using CDC from PostgreSQL to Kafka.</p>
                             <div class="project-tags">
                                 <span>Kafka</span>
                                 <span>PostgreSQL</span>
                                 <span>Qdrant</span>
-                                <span>AWS S3</span>
+                                <span>Docling</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card reveal" data-title="AI Face Recognition System — FPT Corporation"
-                        data-description="Applied face recognition to enhance service automation by identifying VIP and returning customers, improving personalization and customer engagement. Developed a multi-model AI pipeline for face recognition, age, gender, emotion prediction, and image quality assessment. Deployed models using Triton Inference Server and optimized inference with TensorRT for real-time performance. Supported deployment on Jetson devices and server GPUs with multi-threaded processing."
-                        data-tech="Ffmpeg, TensorRT, Triton Server, OpenCV, Redis, Qdrant"
+                    <div class="project-card reveal" data-title="AI Face Recognition System - FPT Corporation"
+                        data-role="AI Engineer"
+                        data-description="Applied face recognition to enhance service automation by identifying VIP and returning customers, improving personalization and customer engagement."
+                        data-responsibilities="Developed a multi-model AI pipeline for face recognition, age, gender, emotion prediction, and image quality assessment.;Deployed models using Triton Inference Server and optimized inference with TensorRT for real-time performance.;Supported deployment on Jetson devices and server GPUs with multi-threaded processing."
+                        data-tech="FFmpeg, TensorRT, Triton Server, OpenCV, Redis, Qdrant"
                         data-img="assets/face_recognition.jpg">
                         <div class="project-img">
                             <img src="assets/face_recognition.jpg" alt="AI Face Recognition System">
@@ -145,8 +151,10 @@
                         </div>
                     </div>
 
-                    <div class="project-card reveal" data-title="Aquaculture Monitoring System — Velox Tech"
-                        data-description="Built AI solutions for aquaculture that analyze fish behavior and farm conditions to help operators improve efficiency, reduce risks, and optimize production. Developed AI systems for monitoring aquaculture environments using underwater cameras. Optimized models for classification, detection, segmentation, and tracking on edge devices. Built data acquisition and visualization pipelines using MQTT."
+                    <div class="project-card reveal" data-title="Aquaculture Monitoring System - Velox Tech"
+                        data-role="Computer Vision Engineer"
+                        data-description="Built AI solutions for aquaculture that analyze fish behavior and farm conditions to help operators improve efficiency, reduce risks, and optimize production."
+                        data-responsibilities="Developed AI systems for monitoring aquaculture environments using underwater cameras.;Optimized models for classification, detection, segmentation, and tracking on edge devices.;Built data acquisition and visualization pipelines using MQTT."
                         data-tech="YOLO, OpenCV, TensorRT, TFLite, NCNN, Gstreamer, MQTT"
                         data-img="assets/aquaculture.jpg">
                         <div class="project-img">
@@ -156,7 +164,7 @@
                             <h3>Aquaculture Monitoring System</h3>
                             <p>AI solutions for analyzing fish behavior via underwater cameras on edge devices.</p>
                             <div class="project-tags">
-                                <span>Edge AI</span>
+                                <span>Jetson</span>
                                 <span>YOLO</span>
                                 <span>TensorRT</span>
                                 <span>MQTT</span>
@@ -165,7 +173,9 @@
                     </div>
 
                     <div class="project-card reveal" data-title="Warehouse Robot Automation System - Velox Tech"
-                        data-description="Developed an automation tool for warehouse robots that detects operational faults in real time. Designed and implemented a ROS-based microservice system to acquire 2D point cloud data from LiDAR sensors, perform coordinate transformations, predict errors, and send results to the robot controller in real time. Built an automated testing, build, and deployment pipeline using GitLab CI/CD."
+                        data-role="Robotic / AI Engineer"
+                        data-description="Developed an automation tool for warehouse robots that detects operational faults in real time, helping businesses prevent downtime and reduce maintenance costs."
+                        data-responsibilities="Designed and implemented a ROS-based microservice system to acquire 2D point cloud data from LiDAR sensors, perform coordinate transformations, predict errors, and send results to the robot controller in real time.;Maintained and extended the system based on customer requirements, ensuring reliability and maintainability.;Built an automated testing, build, and deployment pipeline using GitLab CI/CD."
                         data-tech="ROS, LiDAR, DBSCAN, GitLab CI" data-img="assets/velox_robot.jpeg">
                         <div class="project-img">
                             <img src="assets/velox_robot.jpeg" alt="Warehouse Robot Automation">
@@ -182,8 +192,10 @@
                         </div>
                     </div>
 
-                    <div class="project-card reveal" data-title="News Headline Generator — Freelancer"
-                        data-description="Created a system that automatically generates creative, attention-grabbing news headlines. Built an ETL pipeline to collect and process trending news articles. Implemented a Retrieval-Augmented Generation (RAG) system for content understanding. Fine-tuned large language models (Mistral) to generate creative headlines, monitored via MLflow and vLLM."
+                    <div class="project-card reveal" data-title="News Headline Generator - Freelancer"
+                        data-role="AI Engineer"
+                        data-description="Created a system that automatically generates creative, attention-grabbing news headlines to help publishers boost reader engagement."
+                        data-responsibilities="Built an ETL pipeline to collect and process trending news articles.;Implemented a Retrieval-Augmented Generation (RAG) system for content understanding.;Fine-tuned large language models (Mistral) to generate creative headlines, monitored via MLflow and vLLM."
                         data-tech="Mistral, MLflow, Unslode, vLLM, firecrawl" data-img="assets/news_generator.jpg">
                         <div class="project-img">
                             <img src="assets/news_generator.jpg" alt="News Headline Generator">
@@ -200,9 +212,11 @@
                         </div>
                     </div>
 
-                    <div class="project-card reveal" data-title="PaddleOCR — Vietnamese"
-                        data-description="Developed and adapted an OCR system based on PaddleOCR to accurately detect and recognize Vietnamese text. Implemented a two-stage OCR pipeline with text detection (DBNet, PSENet) and recognition. Handled irregular text (curved, rotated) and extended the pipeline toward intelligent document analysis including layout understanding and table recognition."
-                        data-tech="PaddleOCR, OpenCV, CTC, DBNet, PSENet" data-img="assets/ocr.jpg">
+                    <div class="project-card reveal" data-title="PaddleOCR - Vietnamese" data-role="AI Engineer"
+                        data-description="Developed and adapted an OCR system based on PaddleOCR to accurately detect and recognize Vietnamese text in real-world images and documents."
+                        data-responsibilities="Implemented a two-stage OCR pipeline with text detection (DBNet, PSENet) and recognition (CTC/Attention).;Handled irregular text (curved, rotated, blurred) and extended toward intelligent document analysis including layout understanding and table recognition.;Evaluated end-to-end performance and improved robustness for real-world deployment."
+                        data-tech="PaddleOCR, OpenCV, CTC, DBNet, PSENet" data-img="assets/ocr.jpg"
+                        data-github="https://github.com/hoaitran95/ppocr-vietnamese">
                         <div class="project-img">
                             <img src="assets/ocr.jpg" alt="PaddleOCR - Vietnamese">
                         </div>
@@ -214,13 +228,14 @@
                                 <span>PaddleOCR</span>
                                 <span>OpenCV</span>
                                 <span>DBNet</span>
-                                <span>Document Analysis</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card reveal" data-title="6-Axis Industrial Robot — An Duc Thinh"
-                        data-description="Researched and developed a 6-axis industrial robot to enhance manufacturing automation. Implemented 6-axis robot kinematics models to control robot movements. Calibrated RealSense D435 3D camera and performed projective transformations. Developed solution for robot navigation (pick and place) using deep learning for objects detection."
+                    <div class="project-card reveal" data-title="6-Axis Industrial Robot - An Duc Thinh"
+                        data-role="Robotic Engineer"
+                        data-description="Researched and developed a 6-axis industrial robot to enhance manufacturing automation."
+                        data-responsibilities="Implemented 6-axis robot kinematics models to control robot movements.;Calibrated RealSense D435 3D camera and performed projective transformations.;Developed solution for robot navigation (pick and place) using deep learning for objects detection."
                         data-tech="ROS, OpenCV, Depth camera, YOLO" data-img="assets/industrial_robot.jpg"
                         data-youtube="E7qE8quBkpk">
                         <div class="project-img">
@@ -245,23 +260,39 @@
                         <span class="close-modal">&times;</span>
                         <div class="modal-body">
                             <div class="modal-media" id="modal-media">
-                                <!-- Image or Video will be injected here -->
+                                <!-- Main project image will be here -->
                             </div>
                             <div class="modal-text">
                                 <h2 id="modal-title">Project Title</h2>
+                                <p id="modal-role" class="modal-role-text"></p>
                                 <div class="project-tags" id="modal-tags">
                                     <!-- Tags will be injected here -->
                                 </div>
-                                <div class="modal-description">
-                                    <h3>Project Description</h3>
-                                    <p id="modal-desc">Description text...</p>
+
+                                <div class="modal-info-grid">
+                                    <div class="modal-section">
+                                        <h3>Description</h3>
+                                        <p id="modal-desc"></p>
+                                    </div>
+
+                                    <div class="modal-section" id="responsibilities-section">
+                                        <h3>Key Responsibilities</h3>
+                                        <ul id="modal-responsibilities"></ul>
+                                    </div>
+
+                                    <div class="modal-section" id="diagram-section" style="display: none;">
+                                        <h3>System Architecture</h3>
+                                        <div id="modal-diagram-container" class="modal-media-extra"></div>
+                                    </div>
+
+                                    <div class="modal-section">
+                                        <h3>Tech Stack</h3>
+                                        <p id="modal-tech-list"></p>
+                                    </div>
                                 </div>
-                                <div class="modal-tech">
-                                    <h3>Tech Stack</h3>
-                                    <p id="modal-tech-list">Tech stack details...</p>
-                                </div>
+
                                 <div class="modal-footer" id="modal-footer">
-                                    <!-- Links will be injected here -->
+                                    <!-- Reference links will be injected here -->
                                 </div>
                             </div>
                         </div>

@@ -138,7 +138,13 @@ nav {
 }
 
 .secondary-btn {
-    color: var(--text-primary);
+    background: transparent;
+    color: var(--highlight);
+    border: 1px solid var(--highlight);
+}
+
+.secondary-btn:hover {
+    background: var(--highlight-glow);
 }
 
 /* Projects Section */
@@ -425,20 +431,100 @@ footer {
     height: 100%;
 }
 
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.video-placeholder:hover {
+    transform: scale(1.02);
+}
+
+.video-placeholder img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(100, 255, 218, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.4);
+    transition: var(--transition);
+}
+
+.video-placeholder:hover .play-button {
+    background: var(--highlight);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-icon {
+    color: var(--bg-color);
+    font-size: 24px;
+    margin-left: 4px;
+    /* Offset for visual centering */
+}
+
 .modal-text {
     padding: 30px;
 }
 
 .modal-text h2 {
     color: var(--highlight);
+    margin-bottom: 5px;
+}
+
+.modal-role-text {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-weight: 500;
     margin-bottom: 15px;
 }
 
-.modal-description h3,
-.modal-tech h3 {
+.modal-info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.modal-section h3 {
     font-size: 1.1rem;
     color: var(--text-primary);
-    margin: 20px 0 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--highlight);
+    padding-left: 12px;
+}
+
+.modal-section li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    list-style: none;
+}
+
+.modal-section li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--highlight);
 }
 
 .modal-description p,
@@ -449,9 +535,12 @@ footer {
 }
 
 .modal-footer {
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 40px;
+    padding-top: 25px;
     border-top: 1px solid var(--bg-lighter);
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 /* Mobile Responsiveness */
