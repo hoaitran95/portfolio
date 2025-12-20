@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoai Tran | AI & Robotics Engineer</title>
+    <meta name="description"
+        content="Portfolio of Hoai Tran, showcasing projects in AI, Machine Learning, and Robotics.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="container">
+            <div class="logo">HT<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal">Hi, I'm <span class="highlight">Hoai Tran Minh</span></h1>
+                    <h2 class="reveal">AI Engineer & Robotics Specialist</h2>
+                    <p class="reveal">With 6+ years of experience, I design, develop, and deploy AI solutions across
+                        on-premise, embedded, and cloud platforms. Specialized in Computer Vision, LLMs (RAG), and
+                        high-performance system optimization.</p>
+                    <div class="hero-btns reveal">
+                        <a href="#projects" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title reveal">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/insightscanx.jpg" alt="insightScanX">
+                        </div>
+                        <div class="project-info">
+                            <h3>insightScanX - NexConstruct</h3>
+                            <p>Automated pipeline for data labeling, custom model training, and deployment. Optimized
+                                models for CoreML and implemented a RAG-based chatbot for construction guidelines.</p>
+                            <div class="project-tags">
+                                <span>CoreML</span>
+                                <span>3D reconstruction</span>
+                                <span>YOLO</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://lp.insightscanx.com/vn/" target="_blank"><i class="fab fa-github"></i>
+                                    Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/ai_sales_agent.jpg" alt="AI Sales Agent System">
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Sales Agent System</h3>
+                            <p>Platform for ingesting product data from multi-sources. Designed extraction pipelines and
+                                an AI sales agent generating context-aware, persuasive responses.</p>
+                            <div class="project-tags">
+                                <span>LLMs</span>
+                                <span>Data Pipelines</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/minhhoai1001" target="_blank"><i class="fab fa-github"></i>
+                                    Source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/face_recognition.jpg" alt="AI Face Recognition System">
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Face Recognition System</h3>
+                            <p>Multi-model AI pipeline: face recognition, age/gender, quality assessment. Deployed via
+                                Triton/TensorRT for real-time performance on Jetson/GPUs.</p>
+                            <div class="project-tags">
+                                <span>Triton</span>
+                                <span>TensorRT</span>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/aquaculture.jpg" alt="Aquaculture Monitoring System">
+                        </div>
+                        <div class="project-info">
+                            <h3>Aquaculture Monitoring System</h3>
+                            <p>Optimized models (TensorRT, TFLite, NCNN) for detection/tracking on edge. Built
+                                underwater camera systems with MQTT for real-time data acquisition.</p>
+                            <div class="project-tags">
+                                <span>Edge AI</span>
+                                <span>MQTT</span>
+                                <span>Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/news_generator.jpg" alt="News Headline Generator">
+                        </div>
+                        <div class="project-info">
+                            <h3>News Headline Generator</h3>
+                            <p>ETL pipeline for trending news. Fine-tuned LLMs for engaging headlines with RAG,
+                                monitoring performance via MLflow.</p>
+                            <div class="project-tags">
+                                <span>ETL</span>
+                                <span>MLflow</span>
+                                <span>RAG</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/industrial_robot.jpg" alt="6-Axis Industrial Robot">
+                        </div>
+                        <div class="project-info">
+                            <h3>6-Axis Industrial Robot</h3>
+                            <p>Implemented 6-axis kinematics and RealSense calibration. Built deep learning-based
+                                pick-and-place systems for automated manufacturing.</p>
+                            <div class="project-tags">
+                                <span>Robotics</span>
+                                <span>Kinematics</span>
+                                <span>RealSense</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.youtube.com/watch?v=E7qE8quBkpk" target="_blank"><i
+                                        class="fab fa-youtube"></i> YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title reveal">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category reveal">
+                        <h3>AI & Machine Learning</h3>
+                        <ul>
+                            <li>PyTorch, TensorRT, OpenCV, ONNX</li>
+                            <li>LangChain & Hugging Face</li>
+                            <li>Computer Vision (Detection, Seg)</li>
+                            <li>LLMs & RAG Architectures</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category reveal">
+                        <h3>Engineering & Robotics</h3>
+                        <ul>
+                            <li>C++, Python, Golang, SQL</li>
+                            <li>6-Axis Kinematics & Calibration</li>
+                            <li>Triton Inference Server</li>
+                            <li>Docker & Kubernetes</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category reveal">
+                        <h3>Tools & Infrastructure</h3>
+                        <ul>
+                            <li>AWS & GitLab CI/CD</li>
+                            <li>PostgreSQL, MongoDB, Qdrant</li>
+                            <li>gRPC, Redis, Kafka, MQTT</li>
+                            <li>Embedded AI (Jetson, NCNN)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="certifications reveal" style="margin-top: 50px;">
+                    <h3 style="color: var(--highlight); margin-bottom: 20px;">Certifications & Education</h3>
+                    <div class="cert-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                        <div class="cert-item" style="background: var(--bg-light); padding: 20px; border-radius: 8px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 5px;">AWS Certified AI Practitioner
+                            </h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Expiraton: June 2028</p>
+                        </div>
+                        <div class="cert-item" style="background: var(--bg-light); padding: 20px; border-radius: 8px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 5px;">HCM University of Technology
+                            </h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Mechatronic Engineering — Honor
+                                Program</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container reveal">
+                <h2 class="section-title">Ready to collaborate?</h2>
+                <p>Feel free to reach out for interesting collaborations in AI, Robotics, or high-performance computing.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:minhhoai.ik@gmail.com" class="contact-item">
+                        <i class="envelope"></i> Email Me
+                    </a>
+                    <a href="https://github.com/minhhoai1001" class="contact-item" target="_blank">
+                        <i class="github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/minh-hoai-tran-1001/" class="contact-item" target="_blank">
+                        <i class="linkedin"></i> LinkedIn
+                    </a>
+                </div>
+                <p style="margin-top: 20px; color: var(--text-secondary); font-size: 0.9rem;">📍 Thu Duc Ward, Ho Chi
+                    Minh City, Vietnam</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hoai Tran Minh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
