@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Reveal on scroll
     const revealElements = document.querySelectorAll('.reveal');
-    
+
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
                 const offset = 80;
                 const bodyRect = document.body.getBoundingClientRect().top;

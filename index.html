@@ -37,10 +37,24 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 class="reveal">Hi, I'm <span class="highlight">Hoai Tran Minh</span></h1>
-                    <h2 class="reveal">AI Engineer & Robotics Specialist</h2>
-                    <p class="reveal">With 6+ years of experience, I design, develop, and deploy AI solutions across
-                        on-premise, embedded, and cloud platforms. Specialized in Computer Vision, LLMs (RAG), and
-                        high-performance system optimization.</p>
+                    <h2 class="reveal">AI Engineer & Robotics Engineer</h2>
+                    <div class="hero-description reveal">
+                        <p>With 6+ years of experience building production AI systems across embedded/edge
+                            devices, on-premise servers, and cloud platforms. I specialize in Computer Vision and LLM
+                            applications, with a strong focus on high-performance optimization turning research-grade
+                            models into reliable, low-latency products.</p>
+                        <p>
+                            Over the years, I’ve worked across multiple domains including construction technology,
+                            service automation, aquaculture monitoring, and industrial robotics.
+                            I also build LLM-powered applications such as chatbots and RAG systems that turn
+                            unstructured documents into usable,
+                            searchable knowledge for teams and products.
+                        </p>
+                        <p>I’m motivated by using technology and robotics to make real life easier-helping people work
+                            faster, reduce repetitive tasks, and make better decisions.
+                            I focus on building systems that remain reliable under real-world constraints, not only in
+                            ideal settings.</p>
+                    </div>
                     <div class="hero-btns reveal">
                         <a href="#projects" class="btn primary-btn">View My Work</a>
                         <a href="#contact" class="btn secondary-btn">Get In Touch</a>
@@ -58,17 +72,19 @@
                             <img src="assets/insightscanx.jpg" alt="insightScanX">
                         </div>
                         <div class="project-info">
-                            <h3>insightScanX - NexConstruct</h3>
-                            <p>Automated pipeline for data labeling, custom model training, and deployment. Optimized
-                                models for CoreML and implemented a RAG-based chatbot for construction guidelines.</p>
+                            <h3>InsightScanX — NexConstruct</h3>
+                            <p>Developed AI solutions for 3D reconstruction, automated defect detection, and equipment
+                                counting. Optimized models for CoreML and implemented a RAG-based chatbot for
+                                construction guidelines.</p>
                             <div class="project-tags">
                                 <span>CoreML</span>
-                                <span>3D reconstruction</span>
-                                <span>YOLO</span>
+                                <span>AWS Bedrock</span>
+                                <span>LangGraph</span>
+                                <span>Open3D</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://lp.insightscanx.com/vn/" target="_blank"><i class="fab fa-github"></i>
-                                    Website</a>
+                                <a href="https://lp.insightscanx.com/vn/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i> Website</a>
                             </div>
                         </div>
                     </div>
@@ -79,16 +95,31 @@
                         </div>
                         <div class="project-info">
                             <h3>AI Sales Agent System</h3>
-                            <p>Platform for ingesting product data from multi-sources. Designed extraction pipelines and
-                                an AI sales agent generating context-aware, persuasive responses.</p>
+                            <p>Built an AI sales assistant platform that transforms raw product data from websites and
+                                videos into persuasive, tailored responses to increase conversions.</p>
                             <div class="project-tags">
-                                <span>LLMs</span>
-                                <span>Data Pipelines</span>
-                                <span>Python</span>
+                                <span>Ollama</span>
+                                <span>LangGraph</span>
+                                <span>Web Scraping</span>
                             </div>
-                            <div class="project-links">
-                                <a href="https://github.com/minhhoai1001" target="_blank"><i class="fab fa-github"></i>
-                                    Source</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <div class="placeholder-img"
+                                style="background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                RAG Sync</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Real-time RAG Data Sync</h3>
+                            <p>Designed a RAG platform using CDC from PostgreSQL to Kafka for real-time vector
+                                synchronization in Qdrant, eliminating manual re-indexing.</p>
+                            <div class="project-tags">
+                                <span>Kafka</span>
+                                <span>PostgreSQL</span>
+                                <span>Qdrant</span>
+                                <span>AWS S3</span>
                             </div>
                         </div>
                     </div>
@@ -99,12 +130,13 @@
                         </div>
                         <div class="project-info">
                             <h3>AI Face Recognition System</h3>
-                            <p>Multi-model AI pipeline: face recognition, age/gender, quality assessment. Deployed via
-                                Triton/TensorRT for real-time performance on Jetson/GPUs.</p>
+                            <p>Multi-model pipeline for face recognition, age, gender, and emotion prediction. Optimized
+                                with TensorRT and Triton Server for real-time performance on Jetson/GPUs.</p>
                             <div class="project-tags">
                                 <span>Triton</span>
                                 <span>TensorRT</span>
-                                <span>C++</span>
+                                <span>Redis</span>
+                                <span>Qdrant</span>
                             </div>
                         </div>
                     </div>
@@ -115,12 +147,31 @@
                         </div>
                         <div class="project-info">
                             <h3>Aquaculture Monitoring System</h3>
-                            <p>Optimized models (TensorRT, TFLite, NCNN) for detection/tracking on edge. Built
-                                underwater camera systems with MQTT for real-time data acquisition.</p>
+                            <p>AI solutions for analyzing fish behavior via underwater cameras. Optimized models
+                                (TensorRT, TFLite, NCNN) for edge device efficiency and real-time MQTT data streaming.
+                            </p>
                             <div class="project-tags">
                                 <span>Edge AI</span>
+                                <span>TensorRT</span>
+                                <span>YOLO</span>
                                 <span>MQTT</span>
-                                <span>Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/velox_robot.jpeg" alt="Warehouse Robot Automation">
+                        </div>
+                        <div class="project-info">
+                            <h3>Warehouse Robot Automation</h3>
+                            <p>ROS-based microservice system for warehouse robots. Uses LiDAR data and DBSCAN for
+                                real-time fault detection and perception-control integration.</p>
+                            <div class="project-tags">
+                                <span>ROS</span>
+                                <span>LiDAR</span>
+                                <span>DBSCAN</span>
+                                <span>GitLab CI</span>
                             </div>
                         </div>
                     </div>
@@ -131,12 +182,32 @@
                         </div>
                         <div class="project-info">
                             <h3>News Headline Generator</h3>
-                            <p>ETL pipeline for trending news. Fine-tuned LLMs for engaging headlines with RAG,
-                                monitoring performance via MLflow.</p>
+                            <p>ETL pipeline for trending news. Fine-tuned LLMs (Mistral) for creative headlines with
+                                RAG, monitoring performance via MLflow and vLLM.</p>
                             <div class="project-tags">
-                                <span>ETL</span>
+                                <span>Mistral</span>
                                 <span>MLflow</span>
+                                <span>vLLM</span>
                                 <span>RAG</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <div class="placeholder-img"
+                                style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                PaddleOCR</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>PaddleOCR — Vietnamese</h3>
+                            <p>Two-stage OCR pipeline for Vietnamese text detection and recognition. Handles irregular
+                                text and intelligent document analysis for layout understanding.</p>
+                            <div class="project-tags">
+                                <span>PaddleOCR</span>
+                                <span>OpenCV</span>
+                                <span>DBNet</span>
+                                <span>PSENet</span>
                             </div>
                         </div>
                     </div>
@@ -147,12 +218,13 @@
                         </div>
                         <div class="project-info">
                             <h3>6-Axis Industrial Robot</h3>
-                            <p>Implemented 6-axis kinematics and RealSense calibration. Built deep learning-based
+                            <p>Implemented 6-axis kinematics and RealSense calibration. Developed deep learning-based
                                 pick-and-place systems for automated manufacturing.</p>
                             <div class="project-tags">
                                 <span>Robotics</span>
-                                <span>Kinematics</span>
+                                <span>ROS</span>
                                 <span>RealSense</span>
+                                <span>YOLO</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://www.youtube.com/watch?v=E7qE8quBkpk" target="_blank"><i
@@ -172,7 +244,7 @@
                         <h3>AI & Machine Learning</h3>
                         <ul>
                             <li>PyTorch, TensorRT, OpenCV, ONNX</li>
-                            <li>LangChain & Hugging Face</li>
+                            <li>LangChain, Hugging Face</li>
                             <li>Computer Vision (Detection, Seg)</li>
                             <li>LLMs & RAG Architectures</li>
                         </ul>
@@ -182,8 +254,8 @@
                         <ul>
                             <li>C++, Python, Golang, SQL</li>
                             <li>6-Axis Kinematics & Calibration</li>
-                            <li>Triton Inference Server</li>
-                            <li>Docker & Kubernetes</li>
+                            <li>ROS, LiDAR, DBSCAN</li>
+                            <li>Rest API, gRPC, Redis, Kafka</li>
                         </ul>
                     </div>
                     <div class="skill-category reveal">
@@ -191,7 +263,7 @@
                         <ul>
                             <li>AWS & GitLab CI/CD</li>
                             <li>PostgreSQL, MongoDB, Qdrant</li>
-                            <li>gRPC, Redis, Kafka, MQTT</li>
+                            <li>Docker, Kubernetes, CMake</li>
                             <li>Embedded AI (Jetson, NCNN)</li>
                         </ul>
                     </div>
@@ -204,13 +276,18 @@
                         <div class="cert-item" style="background: var(--bg-light); padding: 20px; border-radius: 8px;">
                             <h4 style="color: var(--text-primary); margin-bottom: 5px;">AWS Certified AI Practitioner
                             </h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Expiraton: June 2028</p>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Expiration: June 2028</p>
+                        </div>
+                        <div class="cert-item" style="background: var(--bg-light); padding: 20px; border-radius: 8px;">
+                            <h4 style="color: var(--text-primary); margin-bottom: 5px;">Deployment of ML Models
+                            </h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Udemy Certification</p>
                         </div>
                         <div class="cert-item" style="background: var(--bg-light); padding: 20px; border-radius: 8px;">
                             <h4 style="color: var(--text-primary); margin-bottom: 5px;">HCM University of Technology
                             </h4>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Mechatronic Engineering — Honor
-                                Program</p>
+                                Program (2013-2018)</p>
                         </div>
                     </div>
                 </div>
@@ -226,7 +303,7 @@
                     <a href="mailto:minhhoai.ik@gmail.com" class="contact-item">
                         <i class="envelope"></i> Email Me
                     </a>
-                    <a href="https://github.com/minhhoai1001" class="contact-item" target="_blank">
+                    <a href="https://github.com/hoaitran95" class="contact-item" target="_blank">
                         <i class="github"></i> GitHub
                     </a>
                     <a href="https://www.linkedin.com/in/minh-hoai-tran-1001/" class="contact-item" target="_blank">

@@ -32,7 +32,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 /* Header & Nav */
@@ -106,7 +106,7 @@ nav {
 }
 
 .hero-content p {
-    max-width: 600px;
+    max-width: 900px;
     font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 40px;
@@ -339,9 +339,10 @@ footer {
     .container {
         padding: 0 25px;
     }
-    
+
     .nav-links {
-        display: none; /* Mobile menu logic can be added later */
+        display: none;
+        /* Mobile menu logic can be added later */
     }
 
     .projects-grid {
