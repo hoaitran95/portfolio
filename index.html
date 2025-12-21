@@ -69,8 +69,9 @@
                 <div class="projects-grid">
                     <div class="project-card reveal" data-title="InsightScanX - NexConstruct" data-role="AI Engineer"
                         data-description="Developed AI solutions for 3D reconstruction and automated defect detection, equipment counting, and project summary reporting, enabling construction teams to streamline site inspections and improve oversight across both App and Web platforms."
-                        data-responsibilities="Built an automated pipeline for data labeling, custom model training, and deployment for 3D scanning applications.;Optimized AI models and integrated them with CoreML for real-time inference on mobile devices.;Implemented a chatbot using Retrieval-Augmented Generation (RAG) to provide construction guidelines, regulations, and detailed instructions for on-site operations."
+                        data-responsibilities="Enhanced 3D scene reconstruction quality using AI-based depth refinement, normal estimation, automated outlier removal, frame selection, and global optimization (pose graph optimization, multi-view consistency) to produce higher-fidelity meshes and sharper textures at scale.;Developed an AI-powered defect analysis system that identifies issues, analyzes potential root causes, and recommends solutions by reasoning over customer-provided technical documents, guidelines, and specifications;Developed AI-based detection and semantic pipelines to identify, count, localize, and visualize electrical and MEP devices (lights, outlets, switches, air conditioners, etc.) within 3D reconstructions, enabling asset management, inspection, and maintenance workflows.;Built an end-to-end automated pipeline for 3D scanning applications, covering data collection, labeling, dataset versioning, custom model training, evaluation, and deployment, supporting scalable and reproducible production workflows.;Optimized and deployed AI models on mobile devices through model compression, quantization, and CoreML integration, achieving low-latency, stable real-time inference under edge device constraints.;Implemented an LLM-powered RAG chatbot that retrieves and reasons over construction guidelines, regulations, and technical documents to provide accurate, context-aware support for on-site engineers."
                         data-tech="Bedrock, LangGraph, CoreML, Open3D, FastAPI" data-img="assets/insightscanx.jpg"
+                        data-extra-sections="3D Mesh Reconstruction|assets/issx_mesh.jpg;Automated Object Counting|assets/issx_counting.jpg"
                         data-link="https://lp.insightscanx.com/vn/">
                         <div class="project-img">
                             <img src="assets/insightscanx.jpg" alt="insightScanX">
@@ -91,7 +92,7 @@
                     <div class="project-card reveal" data-title="AI Sales Agent System - Freelancer"
                         data-role="AI Engineer"
                         data-description="Built an AI sales assistant platform that transforms raw product information into persuasive, tailored responses to help businesses engage customers and increase conversions."
-                        data-responsibilities="Developed a system to ingest and process product data from websites, documents, and YouTube videos.;Designed data extraction and processing pipelines to consolidate structured and unstructured product information.;Built an AI sales agent capable of generating persuasive, context-aware responses."
+                        data-responsibilities="Developed a multi-source data ingestion system to collect and process product information from websites, technical documents, and YouTube videos, including web extraction, document parsing, and transcript-to-text conversion.;Designed end-to-end data processing pipelines to clean, normalize, enrich, and consolidate structured and unstructured product data into high-quality, searchable knowledge for AI-driven applications.;Built an AI-powered sales agent with a multi-stage reasoning pipeline that analyzes customer context and intent to generate personalized, persuasive, and product-grounded responses, improving customer engagement and conversion."
                         data-tech="OpenAPI, Ollama, LangGraph, Firecrawl" data-img="assets/ai_sales_agent.jpg">
                         <div class="project-img">
                             <img src="assets/ai_sales_agent.jpg" alt="AI Sales Agent System">
@@ -109,7 +110,7 @@
                     </div>
 
                     <div class="project-card reveal" data-title="Real-time RAG Data Synchronization Platform"
-                        data-role="AI"
+                        data-role="AI Engineer"
                         data-description="Designed a Retrieval-Augmented Generation (RAG) platform with PostgreSQL as the single source of truth, eliminating manual re-indexing and cron jobs."
                         data-responsibilities="Implemented Change Data Capture (CDC) from PostgreSQL to Kafka, emitting real-time events for all document-related INSERT, UPDATE, and DELETE operations.;Developed a RAG server that consumes Kafka events to automatically convert documents to Markdown, perform chunking and embedding, and remove vectors when documents are deleted or unpublished.;Stored embeddings in Qdrant and managed raw documents in AWS S3, keeping the web application decoupled from the vector DB."
                         data-tech="PostgreSQL, Kafka, Qdrant, Docling" data-img="assets/myrag.jpg"
@@ -132,7 +133,7 @@
                     <div class="project-card reveal" data-title="AI Face Recognition System - FPT Corporation"
                         data-role="AI Engineer"
                         data-description="Applied face recognition to enhance service automation by identifying VIP and returning customers, improving personalization and customer engagement."
-                        data-responsibilities="Developed a multi-model AI pipeline for face recognition, age, gender, emotion prediction, and image quality assessment.;Deployed models using Triton Inference Server and optimized inference with TensorRT for real-time performance.;Supported deployment on Jetson devices and server GPUs with multi-threaded processing."
+                        data-responsibilities="Developed a multi-model AI pipeline combining face recognition, age, gender, emotion prediction, and image quality assessment, using cascaded filtering to reduce bandwidth usage and improve overall system accuracy.;Deployed and optimized models with Triton Inference Server and TensorRT, integrating multi-threaded processing and asynchronous inference to achieve low-latency, high-throughput real-time performance.;Designed and managed a flexible profiling and configuration system to handle per-store user profiles and camera-specific settings (ROI/boxes, appearance duration, schedules, and rules), enabling scalable deployment across multiple locations."
                         data-tech="FFmpeg, TensorRT, Triton Server, OpenCV, Redis, Qdrant"
                         data-img="assets/face_recognition.jpg">
                         <div class="project-img">
@@ -279,6 +280,8 @@
                                         <h3>Key Responsibilities</h3>
                                         <ul id="modal-responsibilities"></ul>
                                     </div>
+
+                                    <div id="modal-extra-sections"></div>
 
                                     <div class="modal-section" id="diagram-section" style="display: none;">
                                         <h3>System Architecture</h3>

@@ -130,7 +130,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (diagramSection) diagramSection.style.display = 'none';
             }
 
-            // Handle Media (Fix bug: Show Image)
+            // Handle Extra Generic Sections (e.g., additional project images with titles)
+            const extraSections = card.getAttribute('data-extra-sections');
+            const extraSectionsContainer = document.getElementById('modal-extra-sections');
+            if (extraSectionsContainer) {
+                extraSectionsContainer.innerHTML = '';
+                if (extraSections) {
+                    extraSections.split(';').forEach(section => {
+                        const parts = section.split('|');
+                        if (parts.length === 2) {
+                            const [secTitle, secImg] = parts;
+                            const sectionDiv = document.createElement('div');
+                            sectionDiv.className = 'modal-section';
+                            sectionDiv.innerHTML = `
+                                <h3>${secTitle}</h3>
+                                <div class="modal-media-extra">
+                                    <img src="${secImg}" alt="${secTitle}" style="width: 100%; border-radius: 8px; margin-top: 10px;">
+                                </div>
+                            `;
+                            extraSectionsContainer.appendChild(sectionDiv);
+                        }
+                    });
+                }
+            }
+
+            // Handle Media (Top Main Image)
             modalMedia.innerHTML = '';
             if (img) {
                 modalMedia.innerHTML = `<img src="${img}" alt="${title}">`;
