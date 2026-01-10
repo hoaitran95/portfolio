@@ -135,7 +135,8 @@
                         data-description="Applied face recognition to enhance service automation by identifying VIP and returning customers, improving personalization and customer engagement."
                         data-responsibilities="Developed a multi-model AI pipeline combining face recognition, age, gender, emotion prediction, and image quality assessment, using cascaded filtering to reduce bandwidth usage and improve overall system accuracy.;Deployed and optimized models with Triton Inference Server and TensorRT, integrating multi-threaded processing and asynchronous inference to achieve low-latency, high-throughput real-time performance.;Designed and managed a flexible profiling and configuration system to handle per-store user profiles and camera-specific settings (ROI/boxes, appearance duration, schedules, and rules), enabling scalable deployment across multiple locations."
                         data-tech="FFmpeg, TensorRT, Triton Server, OpenCV, Redis, Qdrant"
-                        data-img="assets/face_recognition.jpg">
+                        data-img="assets/face_recognition.jpg"
+                        data-extra-sections="System Architecture|assets/face-detection-system.jpg">
                         <div class="project-img">
                             <img src="assets/face_recognition.jpg" alt="AI Face Recognition System">
                         </div>
@@ -154,10 +155,11 @@
 
                     <div class="project-card reveal" data-title="Aquaculture Monitoring System - Velox Tech"
                         data-role="Computer Vision Engineer"
-                        data-description="Built AI solutions for aquaculture that analyze fish behavior and farm conditions to help operators improve efficiency, reduce risks, and optimize production."
-                        data-responsibilities="Developed AI systems for monitoring aquaculture environments using underwater cameras.;Optimized models for classification, detection, segmentation, and tracking on edge devices.;Built data acquisition and visualization pipelines using MQTT."
+                        data-description="Architected an edge vision pipeline combining on-camera image processing and optimized AI inference to dramatically reduce 4K video streaming bandwidth in underwater camera system."
+                        data-responsibilities="Architected an edge vision pipeline combining on-camera image processing and optimized AI inference to dramatically reduce 4K video streaming bandwidth in underwater camera system.;Optimized deep learning models for classification, detection, segmentation, and tracking on edge devices using TensorRT, TFLite, and NCNN.;Designed and implemented a backend system for live camera streaming, data ingestion, and analytics serving a web-based fish farm monitoring platform."
                         data-tech="YOLO, OpenCV, TensorRT, TFLite, NCNN, Gstreamer, MQTT"
-                        data-img="assets/aquaculture.jpg">
+                        data-img="assets/aquaculture.jpg"
+                        data-extra-sections="System Architecture|assets/aqua-system.jpg">
                         <div class="project-img">
                             <img src="assets/aquaculture.jpg" alt="Aquaculture Monitoring System">
                         </div>
@@ -175,8 +177,8 @@
 
                     <div class="project-card reveal" data-title="Warehouse Robot Automation System - Velox Tech"
                         data-role="Robotic / AI Engineer"
-                        data-description="Developed an automation tool for warehouse robots that detects operational faults in real time, helping businesses prevent downtime and reduce maintenance costs."
-                        data-responsibilities="Designed and implemented a ROS-based microservice system to acquire 2D point cloud data from LiDAR sensors, perform coordinate transformations, predict errors, and send results to the robot controller in real time.;Maintained and extended the system based on customer requirements, ensuring reliability and maintainability.;Built an automated testing, build, and deployment pipeline using GitLab CI/CD."
+                        data-description="Developed a LiDAR-based robotic diagnostic tool to detect malfunctioning robots during operation, identify robot type and failure modes, and transmit real-time status and location data to a central control system."
+                        data-responsibilities="Developed a LiDAR-based robotic diagnostic tool to detect malfunctioning robots during operation, identify robot type and failure modes, and transmit real-time status and location data to a central control system.;Implemented ROS-based pipelines for LiDAR sensor data acquisition, noise filtering, point cloud clustering, error prediction, robot classification, and precise localization using coordinate transformations.;Built the system as a reusable Linux package enabling mass installation and standardized deployment across ARM-based boards (e.g., Raspberry Pi, ARM SoCs)."
                         data-tech="ROS, LiDAR, DBSCAN, GitLab CI" data-img="assets/velox_robot.jpeg">
                         <div class="project-img">
                             <img src="assets/velox_robot.jpeg" alt="Warehouse Robot Automation">
@@ -235,8 +237,8 @@
 
                     <div class="project-card reveal" data-title="6-Axis Industrial Robot - An Duc Thinh"
                         data-role="Robotic Engineer"
-                        data-description="Researched and developed a 6-axis industrial robot to enhance manufacturing automation."
-                        data-responsibilities="Implemented 6-axis robot kinematics models to control robot movements.;Calibrated RealSense D435 3D camera and performed projective transformations.;Developed solution for robot navigation (pick and place) using deep learning for objects detection."
+                        data-description="Designed and calculated the mechanical structure of a 6-axis robot, including kinematics modeling and joint constraints."
+                        data-responsibilities="Designed and calculated the mechanical structure of a 6-axis robot, including kinematics modeling and joint constraints.;Calibrated 3D cameras (Intel RealSense D435) for hand–eye alignment, mapping vision data into robot coordinate frames.;Built a deep learning–based pick-and-place system for object detection, size estimation, and navigation in automated manufacturing workflows."
                         data-tech="ROS, OpenCV, Depth camera, YOLO" data-img="assets/industrial_robot.jpg"
                         data-youtube="E7qE8quBkpk">
                         <div class="project-img">
