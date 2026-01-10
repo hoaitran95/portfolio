@@ -470,6 +470,45 @@ model-viewer {
     object-fit: cover;
 }
 
+/* 3D Model Hotspots */
+.hotspot {
+    display: block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    /* Ensure padding is included in width/height */
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    /* White background */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    /* Distinct shadow */
+    cursor: pointer;
+    padding: 6px;
+    /* Adjust padding for better icon-to-circle ratio */
+    transition: all 0.2s ease;
+}
+
+.hotspot:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    background-color: #ffffff;
+    z-index: 100;
+    /* Ensure it pops on top */
+}
+
+.hotspot:focus {
+    outline: none;
+}
+
+.hotspot img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+    /* Let clicks pass through to button */
+}
+
 .play-button {
     position: absolute;
     top: 50%;

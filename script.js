@@ -207,6 +207,64 @@ document.addEventListener('DOMContentLoaded', () => {
                             style="width: 100%; height: 100%; background-color: var(--bg-lighter);"
                             touch-action="pan-y">
                         </model-viewer>`;
+
+                    // Specific logic for InsightScanX to load issues
+                    if (title === 'InsightScanX - NexConstruct') {
+                        fetch('assets/models/issues.json')
+                            .then(response => response.json())
+                            .then(data => {
+                                const viewer = modelContainer.querySelector('model-viewer');
+                                if (!viewer || !data.issues) return;
+
+                                data.issues.forEach(issue => {
+                                    if (issue.position) {
+                                        const btn = document.createElement('button');
+                                        btn.className = 'hotspot';
+                                        btn.slot = `hotspot-${issue.id_local}`;
+                                        // Construct position string: "x y z" (model-viewer uses meters by default)
+                                        btn.dataset.position = `${issue.position.x}m ${issue.position.y}m ${issue.position.z}m`;
+                                        btn.dataset.normal = "0m 1m 0m"; // Default normal
+                                        btn.dataset.visibilityAttribute = "visible";
+                                        btn.title = issue.name; // Tooltip
+
+                                        const icon = document.createElement('img');
+                                        icon.src = "assets/models/icon_issue.png";
+                                        icon.alt = issue.name;
+
+                                        btn.appendChild(icon);
+                                        viewer.appendChild(btn);
+                                    }
+                                });
+                            })
+                            .catch(err => console.error('Error loading 3D issues:', err));
+
+                        // Load Objects
+                        fetch('assets/models/objects.json')
+                            .then(response => response.json())
+                            .then(objects => {
+                                const viewer = modelContainer.querySelector('model-viewer');
+                                if (!viewer || !Array.isArray(objects)) return;
+
+                                objects.forEach((obj, index) => {
+                                    const btn = document.createElement('button');
+                                    btn.className = 'hotspot';
+                                    btn.slot = `hotspot-obj-${index}`;
+                                    btn.dataset.position = `${obj.x}m ${obj.y}m ${obj.z}m`;
+                                    btn.dataset.normal = "0m 1m 0m";
+                                    btn.dataset.visibilityAttribute = "visible";
+                                    btn.title = obj.label;
+
+                                    const icon = document.createElement('img');
+                                    icon.src = `assets/models/icon_${obj.label}.png`;
+                                    icon.alt = obj.label;
+
+                                    btn.appendChild(icon);
+                                    viewer.appendChild(btn);
+                                });
+                            })
+                            .catch(err => console.error('Error loading 3D objects:', err));
+                    }
+
                 } else {
                     modelContainer.style.display = 'none';
                     modelContainer.innerHTML = '';
