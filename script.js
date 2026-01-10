@@ -157,9 +157,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Handle Media (Top Main Image)
             modalMedia.innerHTML = '';
+            let showBottomYoutube = true;
+
             if (img) {
                 modalMedia.style.display = 'flex';
                 modalMedia.innerHTML = `<img src="${img}" alt="${title}">`;
+            } else if (youtube) {
+                // If no image but has YouTube, show YouTube at the top
+                modalMedia.style.display = 'block'; // Block for video container
+                // Use a different ID for the top placeholder to distinguish from bottom
+                modalMedia.innerHTML = `
+                    <div class="video-container">
+                        <div class="video-placeholder" id="video-placeholder-top-btn" title="Click to Watch">
+                            <img src="https://img.youtube.com/vi/${youtube}/maxresdefault.jpg" alt="Video demo thumbnail">
+                            <div class="play-button">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Add click listener for the top video
+                setTimeout(() => {
+                    const topPlaceholderBtn = document.getElementById('video-placeholder-top-btn');
+                    if (topPlaceholderBtn) {
+                        topPlaceholderBtn.addEventListener('click', function () {
+                            this.innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${youtube}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                        });
+                    }
+                }, 0);
+
+                showBottomYoutube = false; // Don't show bottom youtube section since it's at the top
             } else {
                 modalMedia.style.display = 'none';
             }
@@ -185,9 +213,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            // Handle YouTube Integration
+            // Handle YouTube Integration (Bottom Section)
             if (youtubeContainer) youtubeContainer.innerHTML = '';
-            if (youtube) {
+            if (youtube && showBottomYoutube) {
                 if (youtubeSection) youtubeSection.style.display = 'block';
                 if (youtubeContainer) {
                     youtubeContainer.innerHTML = `
