@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const link = card.getAttribute('data-link');
             const github = card.getAttribute('data-github');
             const diagram = card.getAttribute('data-diagram');
+            const model = card.getAttribute('data-model');
 
             // Re-fetch dynamic sections
             youtubeSection = document.getElementById('youtube-section');
@@ -157,7 +158,31 @@ document.addEventListener('DOMContentLoaded', () => {
             // Handle Media (Top Main Image)
             modalMedia.innerHTML = '';
             if (img) {
+                modalMedia.style.display = 'flex';
                 modalMedia.innerHTML = `<img src="${img}" alt="${title}">`;
+            } else {
+                modalMedia.style.display = 'none';
+            }
+
+            // Handle 3D Model
+            const modelContainer = document.getElementById('modal-model-container');
+            if (modelContainer) {
+                if (model) {
+                    modelContainer.style.display = 'block';
+                    modelContainer.innerHTML = `
+                        <model-viewer 
+                            src="${model}" 
+                            alt="3D Model of ${title}" 
+                            auto-rotate 
+                            camera-controls 
+                            shadow-intensity="1" 
+                            style="width: 100%; height: 100%; background-color: var(--bg-lighter);"
+                            touch-action="pan-y">
+                        </model-viewer>`;
+                } else {
+                    modelContainer.style.display = 'none';
+                    modelContainer.innerHTML = '';
+                }
             }
 
             // Handle YouTube Integration
@@ -166,13 +191,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (youtubeSection) youtubeSection.style.display = 'block';
                 if (youtubeContainer) {
                     youtubeContainer.innerHTML = `
-                        <div class="video-placeholder" onclick="window.open('https://youtube.com/watch?v=${youtube}', '_blank')" title="Watch on YouTube">
+                        <div class="video-placeholder" id="video-placeholder-btn" title="Click to Watch">
                             <img src="https://img.youtube.com/vi/${youtube}/maxresdefault.jpg" alt="Video demo thumbnail">
                             <div class="play-button">
                                 <span class="play-icon">▶</span>
                             </div>
                         </div>
                     `;
+
+                    // Add click listener programmatically to avoid quote escaping hell
+                    const placeholderBtn = document.getElementById('video-placeholder-btn');
+                    if (placeholderBtn) {
+                        placeholderBtn.addEventListener('click', function () {
+                            this.innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${youtube}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                        });
+                    }
                 }
             } else {
                 if (youtubeSection) youtubeSection.style.display = 'none';
@@ -199,6 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.classList.remove('active');
         document.body.style.overflow = 'auto';
         if (youtubeContainer) youtubeContainer.innerHTML = ''; // Stop video
+        const modelContainer = document.getElementById('modal-model-container');
+        if (modelContainer) modelContainer.innerHTML = ''; // Stop/Clear model
     };
 
     if (closeModal) {

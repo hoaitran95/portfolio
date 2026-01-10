@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -69,10 +70,10 @@
                 <div class="projects-grid">
                     <div class="project-card reveal" data-title="InsightScanX - NexConstruct" data-role="AI Engineer"
                         data-description="Developed AI solutions for 3D reconstruction and automated defect detection, equipment counting, and project summary reporting, enabling construction teams to streamline site inspections and improve oversight across both App and Web platforms."
-                        data-responsibilities="Enhanced 3D scene reconstruction quality using AI-based depth refinement, normal estimation, automated outlier removal, frame selection, and global optimization (pose graph optimization, multi-view consistency) to produce higher-fidelity meshes and sharper textures at scale.;Developed an AI-powered defect analysis system that identifies issues, analyzes potential root causes, and recommends solutions by reasoning over customer-provided technical documents, guidelines, and specifications;Developed AI-based detection and semantic pipelines to identify, count, localize, and visualize electrical and MEP devices (lights, outlets, switches, air conditioners, etc.) within 3D reconstructions, enabling asset management, inspection, and maintenance workflows.;Built an end-to-end automated pipeline for 3D scanning applications, covering data collection, labeling, dataset versioning, custom model training, evaluation, and deployment, supporting scalable and reproducible production workflows.;Optimized and deployed AI models on mobile devices through model compression, quantization, and CoreML integration, achieving low-latency, stable real-time inference under edge device constraints.;Implemented an LLM-powered RAG chatbot that retrieves and reasons over construction guidelines, regulations, and technical documents to provide accurate, context-aware support for on-site engineers."
-                        data-tech="Bedrock, LangGraph, CoreML, Open3D, FastAPI" data-img="assets/insightscanx.jpg"
+                        data-responsibilities="Enhanced 3D scene reconstruction quality using AI-based depth refinement, normal estimation, automated outlier removal, frame selection, and global optimization (pose graph optimization, multi-view consistency) to produce higher-fidelity meshes and sharper textures at scale.;Developed an AI-powered defect analysis system that identifies issues, analyzes potential root causes, and recommends solutions by reasoning over customer-provided technical documents, guidelines, and specifications;Developed AI-based detection and semantic pipelines to identify, count, localize, and visualize electrical and MEP devices (lights, outlets, switches, air conditioners, etc.) within 3D reconstructions, enabling asset management, inspection, and maintenance workflows.;Built an end-to-end automated pipeline for 3D scanning applications, covering data collection, labeling, dataset versioning, custom model training, evaluation, and deployment, supporting scalable and reproducible production workflows.;Optimized and deployed AI models on mobile devices through model compression, quantization, and CoreML integration, achieving low-latency, stable real-time inference under edge device constraints."
+                        data-tech="Bedrock, LangGraph, CoreML, Open3D, FastAPI"
                         data-extra-sections="3D Mesh Reconstruction|assets/issx_mesh.jpg;Automated Object Counting|assets/issx_counting.jpg"
-                        data-link="https://lp.insightscanx.com/vn/">
+                        data-link="https://lp.insightscanx.com/vn/" data-model="assets/models/model.glb">
                         <div class="project-img">
                             <img src="assets/insightscanx.jpg" alt="insightScanX">
                         </div>
@@ -265,6 +266,9 @@
                             <div class="modal-media" id="modal-media">
                                 <!-- Main project image will be here -->
                             </div>
+                            <div id="modal-model-container" class="modal-media-model">
+                                <!-- 3D Model will be injected here -->
+                            </div>
                             <div class="modal-text">
                                 <h2 id="modal-title">Project Title</h2>
                                 <p id="modal-role" class="modal-role-text"></p>
@@ -284,6 +288,11 @@
                                     </div>
 
                                     <div id="modal-extra-sections"></div>
+
+                                    <div class="modal-section" id="youtube-section" style="display: none;">
+                                        <h3>Project Demo</h3>
+                                        <div id="modal-youtube-container" class="video-container"></div>
+                                    </div>
 
                                     <div class="modal-section" id="diagram-section" style="display: none;">
                                         <h3>System Architecture</h3>

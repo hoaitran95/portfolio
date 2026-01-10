@@ -1,0 +1,114 @@
+{
+    "issues": [
+        {
+            "id": -1,
+            "id_local": 1,
+            "scan_id_local": "",
+            "scan_id": -1,
+            "issue_status": 1,
+            "issue_priority": 1,
+            "created_at_timestamp": 1761039621,
+            "updated_at_timestamp": 1761039621,
+            "start_date": "2025-10-21",
+            "end_date": "2025-10-28",
+            "created_by_id": "",
+            "updated_by_id": "",
+            "name": "Yellow stains on the wall",
+            "description": "",
+            "detect_by": 2682,
+            "assignee_id": 2682,
+            "issue_category": -1,
+            "position": {
+                "x": 1.286881685256958,
+                "y": -0.40755319595336916,
+                "z": -0.5867396593093872
+            },
+            "angle": {
+                "x": 357.6158752441406,
+                "y": 267.2857971191406,
+                "z": 0.0
+            },
+            "camera_position": {
+                "x": 0.7389979362487793,
+                "y": 0.011677145957946778,
+                "z": -0.44108542799949648
+            },
+            "camera_angle": {
+                "x": 36.72903060913086,
+                "y": 104.74906158447266,
+                "z": 355.6534118652344
+            },
+            "image_name": "Issue_000001_01.jpg",
+            "facility_location": -1,
+            "facility": -1,
+            "project": -1,
+            "total_comments": 0,
+            "solution": "Use detergent and a sponge to remove the stains, then repaint the wall.",
+            "total_mention_comments": 0,
+            "issue_images": [
+                {
+                    "id": -1,
+                    "id_local": 1,
+                    "issue": -1,
+                    "image": "Issue_000001_01.jpg",
+                    "created_at": "2025/10/21\n09:40"
+                }
+            ]
+        },
+        {
+            "id": -1,
+            "id_local": 2,
+            "scan_id_local": "",
+            "scan_id": -1,
+            "issue_status": 1,
+            "issue_priority": 1,
+            "created_at_timestamp": 1761039763,
+            "updated_at_timestamp": 1761039763,
+            "start_date": "2025-10-21",
+            "end_date": "2025-10-28",
+            "created_by_id": "",
+            "updated_by_id": "",
+            "name": "Peeling paint on the wall",
+            "description": "",
+            "detect_by": 2682,
+            "assignee_id": 2682,
+            "issue_category": 3,
+            "position": {
+                "x": -1.030303716659546,
+                "y": -0.370136559009552,
+                "z": -0.8628029823303223
+            },
+            "angle": {
+                "x": 358.34381103515627,
+                "y": 82.48749542236328,
+                "z": 0.0
+            },
+            "camera_position": {
+                "x": -0.5733048915863037,
+                "y": 0.0750589370727539,
+                "z": -0.4991121292114258
+            },
+            "camera_angle": {
+                "x": 37.56159591674805,
+                "y": 231.35299682617188,
+                "z": 359.0133056640625
+            },
+            "image_name": "Issue_000002_01.jpg",
+            "facility_location": -1,
+            "facility": -1,
+            "project": -1,
+            "total_comments": 0,
+            "solution": "Remove any loose paint, clean the surface, apply primer and then paint a new coat.",
+            "total_mention_comments": 0,
+            "issue_images": [
+                {
+                    "id": -1,
+                    "id_local": 1,
+                    "issue": -1,
+                    "image": "Issue_000002_01.jpg",
+                    "created_at": "2025/10/21\n09:42"
+                }
+            ]
+        }
+    ]
+}
