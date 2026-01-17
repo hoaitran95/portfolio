@@ -180,7 +180,8 @@
                         data-role="Robotic / AI Engineer"
                         data-description="Developed a LiDAR-based robotic diagnostic tool to detect malfunctioning robots during operation, identify robot type and failure modes, and transmit real-time status and location data to a central control system."
                         data-responsibilities="Developed a LiDAR-based robotic diagnostic tool to detect malfunctioning robots during operation, identify robot type and failure modes, and transmit real-time status and location data to a central control system.;Implemented ROS-based pipelines for LiDAR sensor data acquisition, noise filtering, point cloud clustering, error prediction, robot classification, and precise localization using coordinate transformations.;Built the system as a reusable Linux package enabling mass installation and standardized deployment across ARM-based boards (e.g., Raspberry Pi, ARM SoCs)."
-                        data-tech="ROS, LiDAR, DBSCAN, GitLab CI" data-img="assets/velox_robot.jpeg">
+                        data-tech="ROS, LiDAR, DBSCAN, GitLab CI" data-img="assets/velox_robot.jpeg"
+                        data-extra-sections="System Architecture|assets/ros_system.jpg">
                         <div class="project-img">
                             <img src="assets/velox_robot.jpeg" alt="Warehouse Robot Automation">
                         </div>
@@ -199,7 +200,7 @@
                     <div class="project-card reveal" data-title="News Headline Generator - Freelancer"
                         data-role="AI Engineer"
                         data-description="Created a system that automatically generates creative, attention-grabbing news headlines to help publishers boost reader engagement."
-                        data-responsibilities="Built an ETL pipeline to collect and process trending news articles.;Implemented a Retrieval-Augmented Generation (RAG) system for content understanding.;Fine-tuned large language models (Mistral) to generate creative headlines, monitored via MLflow and vLLM."
+                        data-responsibilities="Developed a web crawling pipeline to automatically collect trending news articles from multiple online sources.;Implemented data cleaning, normalization, and text preprocessing to ensure high-quality training data.;Managed dataset versioning and reproducibility using DVC.;Fine-tuned Mistral-based LLMs using QLoRA (via Unsloth) to efficiently adapt large models with minimal GPU memory usage.;Designed and trained multiple LoRA adapters to support different headline styles, including sarcasm, humorous, and shock-based headlines.;Controlled model outputs through task-specific prompts and adapter selection.;Tracked training experiments, hyperparameters, and evaluation metrics using MLflow.;Evaluated and compared model performance across multiple fine-tuning runs.;Registered and versioned trained models in a centralized model registry.;Deployed fine-tuned models using vLLM to achieve high-throughput, low-latency headline generation.;Enabled scalable inference for real-time or batch content generation workflows."
                         data-tech="Mistral, MLflow, Unslode, vLLM, firecrawl" data-img="assets/news_generator.jpg">
                         <div class="project-img">
                             <img src="assets/news_generator.jpg" alt="News Headline Generator">
